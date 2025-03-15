@@ -45,7 +45,7 @@ El script solicita la siguiente información:
 - Comentario o descripción del usuario
 - Nombre del grupo (si no existe, se crea automáticamente)
 - Directorio home (por defecto, `/home/<nombre_usuario>`)
-- Shell por defecto (por ejemplo, `/bin/bash`)
+- Shell por defecto (por defecto, `/bin/bash`)
 
 ### 2. **Creación del grupo**
 Si el grupo especificado no existe, el script lo crea automáticamente usando el comando `groupadd`.
