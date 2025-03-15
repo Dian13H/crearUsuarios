@@ -77,7 +77,7 @@ El script valida que la contraseña cumpla con los siguientes requisitos:
 ### 6. **Asignación de contraseña**
 Si la contraseña es válida, se asigna al usuario usando el comando `chpasswd`.
 
-### 7. **Mensajes de confirmación**
+### 7. **Manejo de errores**
 El script muestra mensajes de confirmación o error en cada paso del proceso.
 
 ---
