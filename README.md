@@ -37,7 +37,7 @@ Usa como base el script usuarios1.sh y agrega la opción de pedir si el usuario 
 
 ---
 
-## Funcionalidades
+## Funciones
 
 ### 1. **Solicitud de datos**
 El script solicita la siguiente información:
@@ -70,6 +70,8 @@ El script muestra mensajes de confirmación o error en cada paso del proceso.
 ---
 
 ## Ejemplo de Uso
+
+### usuarios0.sh
 
 ```bash
 $ sudo ./crear_usuario.sh
