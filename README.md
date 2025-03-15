@@ -24,8 +24,6 @@ Usa como base el script usuarios1.sh y agrega la opción de pedir si el usuario 
 
 - El comando `visudo` debe estar instalado para configurar el archivo `sudoers`.
 
-#### usuarios2.sh
-
 ---
 
 ## Descarga y uso
