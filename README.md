@@ -90,7 +90,7 @@ Usuario DarthVader configurado correctamente
 ## Notas
 
 - **Permisos de Superusuario**: El script debe ejecutarse con permisos de superusuario para crear usuarios y grupos.
-- **Validación de Contraseña**: Si la contraseña no cumple con las reglas, el script solicitará que se ingrese nuevamente.
+- **Validación de contraseña**: Si la contraseña no cumple con las reglas, el script solicitará que se ingrese nuevamente.
 - **Compatibilidad**: Probado en distribuciones basadas en Debian/Ubuntu.
 
 ---
