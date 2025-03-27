@@ -60,15 +60,15 @@ read -rp "¿Permitir que el usuario $USERNAME ejecute comandos con sudo? (s/n): 
 if [[ "$PERMITIR_SUDO" == "s" || "$PERMITIR_SUDO" == "S" ]]; then
     read -rp "¿Permitir que se ejecuten todos los comandos con sudo? (s/n): " TODOS
     if [[ "$TODOS" == "s" || "$TODOS" == "S" ]]; then
-        echo "$USERNAME ALL=(ALL) ALL" | sudo tee -a /etc/sudoers.d/"$USERNAME" > /dev/null
+        echo "$USERNAME ALL=(ALL) ALL" | tee -a /etc/sudoers.d/"$USERNAME" > /dev/null
         echo "El usuario $USERNAME puede ejecutar todos los comandos con sudo"
     else
         read -rp "Ingrese los comandos específicos (separados por comas, sin espacios): " COMANDOS
-        echo "$USERNAME ALL=(ALL) $COMANDOS" | sudo tee -a /etc/sudoers.d/"$USERNAME" > /dev/null
+        echo "$USERNAME ALL=(ALL) $COMANDOS" | tee -a /etc/sudoers.d/"$USERNAME" > /dev/null
         echo "El usuario $USERNAME puede ejecutar los siguientes comandos con sudo: $COMANDOS"
     fi
 
-    sudo chmod 440 /etc/sudoers.d/"$USERNAME"
+    chmod 440 /etc/sudoers.d/"$USERNAME"
     echo "Permisos de sudo configurados correctamente para el usuario $USERNAME"
 else
     echo "No se configuraron permisos de sudo para el usuario $USERNAME"
